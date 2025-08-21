@@ -4,7 +4,7 @@ export const CONFIG = {
   APP: {
     DEFAULT_TITLE: '입 벌려. 학점 들어간다',
     DEFAULT_API_URL: (typeof window !== 'undefined' && window.location.hostname.endsWith('grade-injection.kr'))
-      ? 'https://api.grade-injection.kr/api'
+      ? '/api'
       : 'http://localhost:3001/api',
   },
 

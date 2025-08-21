@@ -1,6 +1,7 @@
 {
   "routes": [
     { "handle": "filesystem" },
+    { "src": "/api/(.*)", "dest": "https://jungle-grade-injection-be.onrender.com/api/$1" },
     { "src": "/.*", "dest": "/index.html" }
   ]
 }
