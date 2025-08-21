@@ -3,7 +3,9 @@ export const CONFIG = {
   // 앱 기본 설정
   APP: {
     DEFAULT_TITLE: '입 벌려. 학점 들어간다',
-    DEFAULT_API_URL: 'http://localhost:3001/api',
+    DEFAULT_API_URL: (typeof window !== 'undefined' && window.location.hostname.endsWith('grade-injection.kr'))
+      ? 'https://api.grade-injection.kr/api'
+      : 'http://localhost:3001/api',
   },
 
   // 파일 업로드 설정
